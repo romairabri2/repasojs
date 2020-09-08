@@ -13,3 +13,8 @@ if(altura >= 180){
 else {
     datos.innerHTML += `<h1>Eres una persona BAJA</h1>`;
 }
+
+for(var i = 0; i<= 2020; i++){
+    //bloque de instrucciones
+    datos.innerHTML += `<h2>Estamos en el año: ${i}</h2>`;
+}
