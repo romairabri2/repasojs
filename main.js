@@ -47,3 +47,17 @@ document.write(`<h1>Listado de nombres</h1>`);
 nombres.forEach((nombre) => {
     document.write(nombre + '<br>');
 });
+
+var coche = {
+    modelo: 'Mercedes clase A',
+    maxima: 500,
+    antiguedad: 2020,
+    mostrarDatos(){
+        console.log(this.modelo, this.maxima, this.antiguedad);
+    },
+    propiedad1: "valor aleatorio"
+};
+
+document.write("<h1>"+ coche.antiguedad + "</h1>");
+coche.mostrarDatos();
+console.log(coche);
