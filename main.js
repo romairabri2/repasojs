@@ -61,3 +61,21 @@ var coche = {
 document.write("<h1>"+ coche.antiguedad + "</h1>");
 coche.mostrarDatos();
 console.log(coche);
+
+var saludar = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        let saludo = "Hola muy buenas a todos chavales!!!";
+        if(saludo){
+            resolve(saludo);
+        } else {
+            reject("No hay saludo disponible");
+        }
+    }, 2000);
+});
+
+saludar.then(resultado =>{
+    alert(resultado);
+})
+.catch(err =>{
+    alert(err);
+});
